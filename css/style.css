@@ -51,7 +51,7 @@ div.menu {
     margin-left: 15em;
 }
 
-div.header {
+.header {
     width: 100%;
     background-color: #003399;
     font-family: Constantia, Georgia, Palatino, Times New Roman;
