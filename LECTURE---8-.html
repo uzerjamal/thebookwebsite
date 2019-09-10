@@ -1,0 +1,843 @@
+
+<html>
+    <head>
+        <title>
+LECTURE---8-
+</title>
+
+<link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery.js"></script> 
+        <script> 
+            $(function(){
+                $("#menuHere").load("menu.html"); 
+                $("#headerHere").load("header.html");
+            });
+        </script> 
+    </head>
+
+    <body>
+      <div id="headerHere"></div>
+      <div id="menuHere"></div>
+      <div class="content">
+<div class="article-content entry-content" itemprop="articleBody"><div dir="ltr" style="text-align: left;" trbidi="on">
+<br/>
+<br/>
+<div style="background: #00B050; margin-bottom: .0001pt; margin: 0in; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<br/></div>
+<div align="center" class="MsoNormal" style="text-align: center;">
+<b><span style='color: #ff0066; font-family: "bookman old style" , "serif"; font-size: 72.0pt;'>C#</span></b><span style="color: #ff0066; font-size: 13.5pt;"><o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal" style="background: #00B050; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal" style="tab-stops: 139.0pt;">
+<b style="mso-bidi-font-weight: normal;"><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 14.0pt;'>C#.NET BASICS-1:<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="tab-stops: 139.0pt;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 8.0pt;'> <span style="mso-tab-count: 1;">                                             </span></span><span style="color: black; font-size: 13.5pt;"><o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l5 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Keywords and Identifiers<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l5 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Data types and Literals<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l5 level1 lfo1; text-indent: -.25in;">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>VARIABLES AND CONSTANT<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l7 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>what is variable <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l7 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>what is constant <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l7 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>what is variable in a program<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>KEYWORDS IN C#:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l6 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is word<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l6 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is reserve word<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l6 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is keyword<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l6 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Need of keywords<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l6 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Importance of keywords<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l6 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What are rules for keywords<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l6 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Can we write and compile a C# program without using any keyword <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>RULES FOR KEYWORDS IN C#:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraph" style="margin-left: .25in; mso-add-space: auto; mso-list: l10 level1 lfo5; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>All keywords are lowercase words<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraph" style="margin-left: .25in; mso-add-space: auto; mso-list: l10 level1 lfo5; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Keywords cannot be used an identifier i.e. keywords cannot be used<span style="mso-spacerun: yes;">  </span>as a name of variable, method, class,
+interface, namespace, etc.<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraph" style="margin-left: .25in; mso-add-space: auto; mso-list: l10 level1 lfo5; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>The same keywords cannot be used together in the same statement.<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9pt;'>Program – 1:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9pt;'> Please count how many keywords used in the program below:</span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>using System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>namespace hello<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>class HelloWorld<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>static void
+Main(string[] args)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine("Hello World");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Program – 2:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'> Will the following program compile by C# compiler.<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>hello<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>HelloWorld<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Main(string[] args)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine("Hello World");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">  </span><o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>IDENTIFIERS IN C#:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l8 level1 lfo6; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is Identifier<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l8 level1 lfo6; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is the need of Identifier<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l8 level1 lfo6; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Importance of Identifiers<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l8 level1 lfo6; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What are rules forIdentifiers in C#<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l8 level1 lfo6; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Can we write and compile a C# program without using any Identifier
+<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>RULES FOR IDENTIFIERS:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l12 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Can be in upper case or lower case<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l12 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Can be of any length <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l12 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Can not begin with a<span style="mso-spacerun: yes;">  </span>number<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l12 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Underscore(_) is allowed <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l12 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>There should not be space between two word – which define
+identifier<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l12 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>The name may consist of letters, digits, and underscore<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l12 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>They must not begin with a digit<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l12 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>It should not a keyword<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l12 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>White space are not allowed<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9pt;'>Program – 1:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9pt;'> Please count how many identifiers are used in the program.</span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>using System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>namespace hello<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>class HelloWorld<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>static void
+Main(string[] args)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine("Hello World");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Program – 2:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'> Will the C# compiler understand the code correctly.Will it
+compile<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>using ;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>namespace <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>class <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>static void
+(string[] args)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine("Hello World");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>LITERALS IN C#<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is literal <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is the need , importance <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>How to use literals in programming<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Character literals<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>String literals<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Boolean literals<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Integral literals<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Floating point literals<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What are reserved literals in C#<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>ture,false, null, <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>what are escape sequence <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Literals available for Types: simple and reference type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Data Types<span style="mso-tab-count: 1;">        </span>Default
+Value<span style="mso-tab-count: 1;">    </span>Minimum Value<span style="mso-tab-count: 1;"> </span>Maximum Value<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Sbyte<span style="mso-tab-count: 3;">                            </span>0<span style="mso-tab-count: 1;">          </span>-128<span style="mso-tab-count: 1;">      </span>127<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Byte<span style="mso-tab-count: 3;">                             </span>0<span style="mso-tab-count: 1;">          </span>0<span style="mso-tab-count: 1;">          </span>255<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Short<span style="mso-tab-count: 3;">                            </span>0<span style="mso-tab-count: 1;">          </span>-32768<span style="mso-tab-count: 1;">  </span>32767<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Ushort<span style="mso-tab-count: 3;">                          </span>0<span style="mso-tab-count: 1;">          </span>0<span style="mso-tab-count: 1;">          </span>65535<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Int<span style="mso-tab-count: 3;">                                </span>0<span style="mso-tab-count: 1;">          </span>-2147483648<span style="mso-tab-count: 1;">     </span>2147483647<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Uint<span style="mso-tab-count: 3;">                              </span>0u<span style="mso-tab-count: 1;">        </span>0<span style="mso-tab-count: 1;">          </span>4294967295<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Long<span style="mso-tab-count: 3;">                             </span>0L<span style="mso-tab-count: 1;">         </span>-9223372036854775808<span style="mso-tab-count: 1;">  </span>9223372036854775807<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Ulong<span style="mso-tab-count: 3;">                           </span>0u<span style="mso-tab-count: 1;">        </span>0<span style="mso-tab-count: 1;">          </span>18446744073709551615<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Float<span style="mso-tab-count: 3;">                            </span>0.0f<span style="mso-tab-count: 1;">       </span>±1.5×10-45<span style="mso-tab-count: 1;">        </span>±3.4×1038<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Double<span style="mso-tab-count: 3;">                          </span>0.0d<span style="mso-tab-count: 1;">      </span>±5.0×10-324<span style="mso-tab-count: 1;">      </span>±1.7×10308<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Decimal<span style="mso-tab-count: 3;">                                    </span>0.0m<span style="mso-tab-count: 1;">     </span>±1.0×10-28<span style="mso-tab-count: 1;">        </span>±7.9×1028<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Bool<span style="mso-tab-count: 3;">                             </span>False<span style="mso-tab-count: 1;">    </span>Two possible values: true and false<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Char<span style="mso-tab-count: 3;">                             </span>'\u0000'<span style="mso-tab-count: 1;">            </span>'\u0000'<span style="mso-tab-count: 1;">            </span>'\uffff'<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Object<span style="mso-tab-count: 3;">                           </span>Null<span style="mso-tab-count: 1;">      </span>-<span style="mso-tab-count: 1;">           </span>-<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>String<span style="mso-tab-count: 3;">                           </span>Null<span style="mso-tab-count: 1;">      </span>-<span style="mso-tab-count: 1;">           </span>-<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>DATATYPES IN C# <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo9; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Types of data types<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo9; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Size of values types<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo9; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Default values <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo9; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Ranges of value types<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo9; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Memory area allocation <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>General Questions: <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>1.<span style="mso-tab-count: 1;">         </span>What is data<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>2.<span style="mso-tab-count: 1;">         </span>What is type <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>3.<span style="mso-tab-count: 1;">         </span>What is data type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>4.<span style="mso-tab-count: 1;">         </span>What types of data
+we handle in real life<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>5.<span style="mso-tab-count: 1;">         </span>What are different
+types of types in C#<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>6.<span style="mso-tab-count: 1;">         </span>What is value type
+in C#<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>7.<span style="mso-tab-count: 1;">         </span>What is Reference
+type inC#<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>8.<span style="mso-tab-count: 1;">         </span>What is Pointer
+Type in C#<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>9.<span style="mso-tab-count: 1;">         </span>What is the need
+of<span style="mso-spacerun: yes;">  </span>data types<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>10.<span style="mso-tab-count: 1;">        </span>What is the
+importance of datatypes<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>11.<span style="mso-tab-count: 1;">        </span>What is value type
+( System.ValueTypes)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>12.<span style="mso-tab-count: 1;">        </span>What is reference
+type(System.Object)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>13.<span style="mso-tab-count: 1;">        </span>What is
+System.ValueType<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>14.<span style="mso-tab-count: 1;">        </span>What is
+System.Object<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>15.<span style="mso-tab-count: 1;">        </span>What memory area
+is allocated to value type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>16.<span style="mso-tab-count: 1;">        </span>What memory are is
+allocated to Reference type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>17.<span style="mso-tab-count: 1;">        </span>What is stack <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>18.<span style="mso-tab-count: 1;">        </span>What is heap<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>19.<span style="mso-tab-count: 1;">        </span>What is difference
+between value type and reference type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>20.<span style="mso-tab-count: 1;">        </span>What are
+pre-defined type in C#<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>21.<span style="mso-tab-count: 1;">        </span>What is user
+defined types in C#<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>22.<span style="mso-tab-count: 1;">        </span>What is primitive
+data type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>23.<span style="mso-tab-count: 1;">        </span>What is non-
+primitive type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>24.<span style="mso-tab-count: 1;">        </span>What is
+classification of data type( pre-defined or built – in<span style="mso-spacerun: yes;">  </span>, user defined)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>25.<span style="mso-tab-count: 1;">        </span>What is
+classification of data type( Value Types , Reference Types, Pointer Types)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>26.<span style="mso-tab-count: 1;">        </span>What is CTS, how
+it is related with C# data types<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>27.<span style="mso-tab-count: 1;">        </span>What is the
+importance of CTS<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>28.<span style="mso-tab-count: 1;">        </span>What is unsafe
+type?<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>29.<span style="mso-tab-count: 1;">        </span>C# is strongly
+typed language, explain <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>30.<span style="mso-tab-count: 1;">        </span>What are default
+values of different value type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>31.<span style="mso-tab-count: 1;">        </span>What is the
+default value of reference type<span style="mso-spacerun: yes;">  </span><o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>32.<span style="mso-tab-count: 1;">        </span>what is<span style="mso-spacerun: yes;">  </span>different ranges of different value types
+[write a program to know ]<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>33.<span style="mso-tab-count: 1;">        </span>C# is strongly
+typed language, explain<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>34.<span style="mso-tab-count: 1;">        </span>What are built-in
+data types in C#.<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Important Points about data types:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo10; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>All value types are keywords<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo10; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>All value types are derived from System.ValueTypes<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo10; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>All value types stored in stack memory area<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo10; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>All reference type get memory from heap area<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo10; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>string and object are reserved Reference type( allocation is done
+from heap)<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo10; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>C# is strongly typed language<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo10; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>C# is type safe language<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Simple Types <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>1.byte<span style="mso-spacerun: yes;">  </span>: (byte,sbyte)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>2.short :(short,ushort)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>3.int: (uint)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>4.long:(ulong)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>5.char:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>6.float:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>7.double:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>8.decimal:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>9.bool: true<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>byte b(1 byte)<span style="mso-spacerun: yes;">   </span>= 0-255<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>sbyte b(1 byte) = -127 - +128<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>short s(2 byte)= -32768 to + 32767 <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>ushort(2 byte) = 0 to 65535<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>int i(4byte)= -2147483648 to +2147483647<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>uint i(4 byte)= 0 to 4294967295<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>long ( 8 byte) = - 9223372036854775808<span style="mso-spacerun: yes;">  </span>to +9223372036854775807 <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>ulong(8 byte) = 0 to 18446744073709551615<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>char ( 2 byte) = 0 to 65535<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>float ( 4 bytes) = 1.5 E -45 to 3.4 E+38<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>double ( 8 bytes) = 5.0 E – 324 to 1.7 E + 308<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>decimal( 16 byte) = 1.0 E -28 To 7.9 E+28<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Demo programs:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>1.<span style="mso-tab-count: 1;">         </span>Literals
+assignment to value types ( in range )<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>2.<span style="mso-tab-count: 1;">         </span>Default values of
+all value types<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>3.<span style="mso-tab-count: 1;">         </span>Default values of
+all reference type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>4.<span style="mso-tab-count: 1;">         </span>How to assign
+value to char type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>CTS:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>C# Type<span style="mso-tab-count: 1;">            </span>.NET
+Framework Type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>bool : System.Boolean<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>byte : System.Byte<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>sbyte: System.SByte<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>char : System.Char<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>decimal:System.Decimal<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>double:System.Double<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>float:System.Single<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>int: System.Int32<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>uint: System.UInt32<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>long: System.Int64<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>ulong:System.UInt64<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>object:System.Object<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>short:System.Int16<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>ushort:System.UInt16<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>string:System.String<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Reference Types in C# <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>1.<span style="mso-tab-count: 1;">         </span>What is reference
+type <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>2.<span style="mso-tab-count: 1;">         </span>Classification of
+reference type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>3.<span style="mso-tab-count: 1;">         </span>What are
+predefined reference type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>4.<span style="mso-tab-count: 1;">         </span>What is user
+defined reference type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>5.<span style="mso-tab-count: 1;">         </span>What is string
+type <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>6.<span style="mso-tab-count: 1;">         </span>What is object
+type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>7.<span style="mso-tab-count: 1;">         </span>What is class type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>8.<span style="mso-tab-count: 1;">         </span>What is interface
+type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>9.<span style="mso-tab-count: 1;">         </span>What is array type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>10.<span style="mso-tab-count: 1;">        </span>What is delegate
+type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>11.<span style="mso-tab-count: 1;">        </span>What is the
+default value of reference type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>12.<span style="mso-tab-count: 1;">        </span>Default value for
+string type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>13.<span style="mso-tab-count: 1;">        </span>Default value for
+object type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>14.<span style="mso-tab-count: 1;">        </span>Default value for
+class type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>15.<span style="mso-tab-count: 1;">        </span>Default value for
+interface type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>16.<span style="mso-tab-count: 1;">        </span>Default value for
+array type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>17.<span style="mso-tab-count: 1;">        </span>Default value for
+delegate type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Predefined – Reference Types:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Data Types<span style="mso-tab-count: 1;">        </span>Default
+Value<span style="mso-tab-count: 1;">    </span>Minimum Value<span style="mso-tab-count: 1;"> </span>Maximum Value<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Object<span style="mso-tab-count: 3;">                           </span>Null<span style="mso-tab-count: 1;">      </span>-<span style="mso-tab-count: 1;">           </span>-<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>String<span style="mso-tab-count: 3;">                           </span>Null<span style="mso-tab-count: 1;">      </span>-<span style="mso-tab-count: 1;">           </span>-<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>string:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>string institute = "cdac";<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>string institute = "cdac noida";<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>string institute = "cdac \t noida";<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>string institute = "cdac \n noida";<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>object:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>object xyz=10;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>object xyz=new object();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>REFERENCES:<o:p></o:p></span></div>
+<div style="margin-left: .25in; mso-list: l9 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>   
+</span></span></span><!--[endif]--><a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history"><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>history</span></a><a href="http://manojpurohitcsharp.blogspot.com/">http://manojpurohitcsharp.blogspot.com</a><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'><br/></span>
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>ASSIGNMENTS:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div style="margin-bottom: .0001pt; margin-bottom: 0in; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-list: l1 level1 lfo12; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>   
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Explain
+the following in details<o:p></o:p></span></div>
+<div style="margin-bottom: .0001pt; margin: 0in;">
+<br/></div>
+<div style="margin-bottom: .0001pt; margin-bottom: 0in; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-list: l4 level1 lfo11; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-list: Ignore;">A.<span style='font: 7.0pt "Times New Roman";'>   
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Keywords<o:p></o:p></span></div>
+<div style="margin-bottom: .0001pt; margin-bottom: 0in; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-list: l4 level1 lfo11; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-list: Ignore;">B.<span style='font: 7.0pt "Times New Roman";'>   
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Identifiers<o:p></o:p></span></div>
+<div style="margin-bottom: .0001pt; margin-bottom: 0in; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-list: l4 level1 lfo11; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-list: Ignore;">C.<span style='font: 7.0pt "Times New Roman";'>   
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Literals
+<o:p></o:p></span></div>
+<div style="margin-bottom: .0001pt; margin-bottom: 0in; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-list: l4 level1 lfo11; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-list: Ignore;">D.<span style='font: 7.0pt "Times New Roman";'>   
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Data
+type in C#<o:p></o:p></span></div>
+<div style="margin-bottom: .0001pt; margin-bottom: 0in; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-list: l4 level1 lfo11; text-indent: -.25in;">
+<br/></div>
+<div style="margin-bottom: .0001pt; margin-bottom: 0in; margin-left: .25in; margin-right: 0in; margin-top: 0in;">
+<br/></div>
+<div align="right" style="margin-bottom: .0001pt; margin: 0in; text-align: right;">
+<b><i><span style='color: #ff0066; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>ManojPurohit</span></i></b><b style="mso-bidi-font-weight: normal;"><span style='color: #ff0066; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'><o:p></o:p></span></b></div>
+<div align="right" style="margin-bottom: .0001pt; margin: 0in; text-align: right;">
+<b style="mso-bidi-font-weight: normal;"><i><span style='color: #00b050; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>shripurohitshri@gmail.com</span></i></b><b style="mso-bidi-font-weight: normal;"><span style='color: #00b050; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'><o:p></o:p></span></b></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<br/></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<br/></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<span style='color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>07.08.2019<o:p></o:p></span></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<i><span style='color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>shripurohitshri@gmail.com</span></i><span style='color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<i><span style='background: white; color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>notes@merehain:copyright reserved</span></i><span style='color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div style="margin-bottom: .0001pt; margin: 0in;">
+<br/></div>
+<div style="background: #00B050; margin-bottom: .0001pt; margin: 0in; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<span style='color: white; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>WEEK-2: LECTURE-8:C#.NET:MCA-III SEM:
+10.00PM - 11.00PM<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="background: #00B050; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<span style='color: white; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>LECTURE-8:
+KEYWORDS, IDENTIFIERS, LITERALS, DATATYPES,TYPECASTING,BOXING, UNBOXING,
+COMMENTS, INPUT VALUES FROM KEYBOARD,ETC<o:p></o:p></span></div>
+<br/></div>
+</div>
+</div>
+</body>
+</html>

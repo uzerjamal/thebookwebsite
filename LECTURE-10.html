@@ -1,0 +1,874 @@
+
+<html>
+    <head>
+        <title>
+LECTURE-10
+</title>
+
+<link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery.js"></script> 
+        <script> 
+            $(function(){
+                $("#menuHere").load("menu.html"); 
+                $("#headerHere").load("header.html");
+            });
+        </script> 
+    </head>
+
+    <body>
+      <div id="headerHere"></div>
+      <div id="menuHere"></div>
+      <div class="content">
+<div class="article-content entry-content" itemprop="articleBody"><div dir="ltr" style="text-align: left;" trbidi="on">
+<br/>
+<br/>
+<div style="background: #00B050; margin-bottom: .0001pt; margin: 0in; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<br/></div>
+<div align="center" class="MsoNormal" style="text-align: center;">
+<b><span style='color: #ff0066; font-family: "Bookman Old Style","serif"; font-size: 72.0pt;'>C#</span></b><span style="color: #ff0066; font-size: 13.5pt;"><o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal" style="background: #00B050; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal" style="tab-stops: 139.0pt;">
+<b style="mso-bidi-font-weight: normal;"><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 14.0pt;'>C#.NET BASICS-1:<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="tab-stops: 139.0pt;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'> <span style="mso-tab-count: 1;">                                             </span></span><span style="color: black; font-size: 13.5pt;"><o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style="color: black; font-family: Symbol; font-size: 9.0pt; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol;"><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Command line arguments<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style="color: black; font-family: Symbol; font-size: 9.0pt; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol;"><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>How to get different datatypes from keyboard<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>INPUT FROM KEYBOARD:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l1 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style="font-family: Symbol; font-size: 9.0pt; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol;"><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>What
+is command line<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l1 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style="font-family: Symbol; font-size: 9.0pt; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol;"><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>What
+is command line arguments<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l1 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style="font-family: Symbol; font-size: 9.0pt; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol;"><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>What
+is public static void main <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l1 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style="font-family: Symbol; font-size: 9.0pt; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol;"><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>What
+is the drawback of using command line arguments for getting input values.<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>INPUT FROM KEYBOARD: <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>simple values<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>1.<span style="mso-tab-count: 1;">         </span>How to enter
+string : name<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>2.<span style="mso-tab-count: 1;">         </span>How to enter age :
+int<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>3.<span style="mso-tab-count: 1;">         </span>How to enter salary:
+double<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>4.<span style="mso-tab-count: 1;">         </span>How to convert
+string type input to other type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Program-1: string input <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>using System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>class Program<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>static void Main()<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.Write("Enter Name :");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>string name =
+Console.ReadLine();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Console.WriteLine("your
+name is<span style="mso-spacerun: yes;">   </span>"+name);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Program-2: string input <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>using System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>class Program<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>static void Main()<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.Write("Enter your age :");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>string age =
+Console.ReadLine();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Console.WriteLine("your
+age is =<span style="mso-spacerun: yes;">  </span>"+age);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Program-3: program to check that person is eligible to cast the
+vote or not. What is the output of the following program.<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>using System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>class Program<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>static void Main()<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.Write("Enter your age :");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>string age =
+Console.ReadLine();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine("your age is =<span style="mso-spacerun: yes;"> 
+</span>"+age);<span style="mso-spacerun: yes;">   </span><o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>if (age&gt;=18)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine("you are eligible to cast vote”);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>else<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Console.WriteLine("you
+are not eligible to cast vote”);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Program-4: program to check that person is eligible to cast the
+vote or not. What is the output of the following program.<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>using System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>class Program<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>static void Main()<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.Write("Enter your age :");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>int age =
+int.Parse(Console.ReadLine());<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine("your age is =<span style="mso-spacerun: yes;"> 
+</span>" + age);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>if (age &gt;= 18)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine("you are eligible to cast vote");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>else<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">     </span><span style="mso-spacerun: yes;">       </span>Console.WriteLine("you are not
+eligible to cast vote");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>CONST AND ENUM<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>1. What is named constant: (what is the area of circle)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>2. What is enum:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>3. What is const keyword in C#<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>4. What is enum keyword in C#<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>5. How to define named constant in C#<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Note: Constant variable is not the correct sentence<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Program-1: constant: how to make named constant<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>using System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>class Program<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>static void Main()<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">         </span>const double pi =
+3.14;<span style="mso-spacerun: yes;">            </span><o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        
+</span>Console.WriteLine(pi);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">         </span>pi = 4.13;// ERROR<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">         </span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Program-2: constant: how to make named constant<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>using System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>class Program<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>static void Main()<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>const double pi =
+3.14;<span style="mso-spacerun: yes;">            </span><o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(pi);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Program-1: Enum: <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>using System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>class Program<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>static void Main()<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>int weekday = 0;//
+what is it, sunday or monday <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(weekday);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Program-2: Enum: <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>using System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>class Program<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>static void Main()<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>string weekday =
+"Monday";<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(weekday);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Program-3: Enum: <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>using System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>class Program<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>static void Main()<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>string weekday =
+"Monday";<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(weekday);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>weekday =
+"Holiday"; // which is not any weekday, weekday must be named
+constant<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(weekday);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Program-4: Enum: <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>using System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>class Program<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>static void Main()<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>const string weekday
+= "Monday";<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Console.WriteLine
+(weekday);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>weekday =
+"Holiday"; // error<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Console.WriteLine
+(weekday);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Console.ReadKey
+(<span style="mso-spacerun: yes;">  </span>);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Program-5: Enum: <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>using System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>class Program<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>static void Main()<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>int weekdays=(int)
+weekday.Monday;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(weekdays);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>weekdays =(int)
+weekday.Tuesday;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(weekdays);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">        </span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>enum weekday<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>Monday, // it is named
+constant for 0<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>Tuesday,// it is named
+constant for 1<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>Wednesday,// it is named
+constant for 2<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>Thrusday,// it is named
+constant for 3<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>Friday,// it is named
+constant for 4<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>Saturday,// it is named
+constant for 5<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>Sunday,// it is named
+constant for 6<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Questions: enum<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>1.<span style="mso-tab-count: 1;">         </span>Can we assign enum
+of int values to a simple int type variable<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>2.<span style="mso-tab-count: 1;">         </span>Can we assign can
+we assign int value to enum variable<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>Points : enum<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>1.<span style="mso-tab-count: 1;">         </span>Enum can be
+byte,sbyte,short, ushort, int, uint, long, ulong,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>2.<span style="mso-tab-count: 1;">         </span>Bydefault it is
+integer type<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>3.<span style="mso-tab-count: 1;">         </span>Default values
+begins with zero<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>4.<span style="mso-tab-count: 1;">         </span>Eum is a
+collection of related named constants<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>enum
+weekdays{sunday,monday,tuesday,wednesday,thrusday,friday,Saturday}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>enum weekdays<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>sunday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>monday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>tuesday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>wednesday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>thrusday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>friday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>saturday<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>enum weekdays<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>sunday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>monday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>tuesday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>Wednesday=5,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>thrusday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>friday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>saturday<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>enum weekdays:int<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>sunday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>monday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>tuesday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>Wednesday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>thrusday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>friday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>saturday<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>enum weekdays:byte<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>sunday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>monday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>tuesday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>Wednesday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>thrusday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>friday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>saturday<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>enum weekdays:sbyte<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>sunday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>monday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>tuesday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>Wednesday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>thrusday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>friday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>saturday<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>enum weekdays:ulong<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>sunday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>monday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>tuesday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>Wednesday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>thrusday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>friday,<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>saturday<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>enum status<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>Active,passive<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span><o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>enum gender<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">   </span>Unknown, male,
+female<span style="mso-spacerun: yes;">   </span><o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 9.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 11.0pt;'>REFERENCES:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 11.0pt;'><br/></span></div>
+<div style="margin-left: .25in; mso-list: l3 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 10.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>   
+</span></span></span><!--[endif]--><a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history"><span style='font-family: "Bookman Old Style","serif"; font-size: 10.0pt;'>history</span></a><a href="http://manojpurohitcsharp.blogspot.com/">http://manojpurohitcsharp.blogspot.com</a><span style='font-family: "Bookman Old Style","serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div style="margin-left: .25in; mso-list: l3 level1 lfo2; text-indent: -.25in;">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 11.0pt;'>ASSIGNMENTS:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div style="margin-bottom: .0001pt; margin-bottom: 0in; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-list: l0 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 10.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>   
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 10.0pt;'>Explain
+: what is command line argument in C# and its drawback (with example)<o:p></o:p></span></div>
+<div style="margin-bottom: .0001pt; margin-bottom: 0in; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-list: l0 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 10.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">2.<span style='font: 7.0pt "Times New Roman";'>   
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 10.0pt;'>Explain
+how get different literals from keyboard in C# programs<o:p></o:p></span></div>
+<div style="margin-bottom: .0001pt; margin-bottom: 0in; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-list: l0 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 10.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">3.<span style='font: 7.0pt "Times New Roman";'>   
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 10.0pt;'>Explain
+: what is const in C#<o:p></o:p></span></div>
+<div style="margin-bottom: .0001pt; margin-bottom: 0in; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-list: l0 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 10.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">4.<span style='font: 7.0pt "Times New Roman";'>   
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 10.0pt;'>Explain
+: what is enum and where it is used in C# programming <o:p></o:p></span></div>
+<div style="margin-bottom: .0001pt; margin: 0in;">
+<br/></div>
+<div align="right" style="margin-bottom: .0001pt; margin: 0in; text-align: right;">
+<b><i><span style='color: #ff0066; font-family: "Bookman Old Style","serif"; font-size: 11.0pt;'>ManojPurohit</span></i></b><b style="mso-bidi-font-weight: normal;"><span style='color: #ff0066; font-family: "Bookman Old Style","serif"; font-size: 11.0pt;'><o:p></o:p></span></b></div>
+<div align="right" style="margin-bottom: .0001pt; margin: 0in; text-align: right;">
+<b style="mso-bidi-font-weight: normal;"><i><span style='color: #00b050; font-family: "Bookman Old Style","serif"; font-size: 11.0pt;'>shripurohitshri@gmail.com</span></i></b><b style="mso-bidi-font-weight: normal;"><span style='color: #00b050; font-family: "Bookman Old Style","serif"; font-size: 11.0pt;'><o:p></o:p></span></b></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<br/></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<br/></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<span style='color: #002060; font-family: "Bookman Old Style","serif"; font-size: 10.0pt;'>09.08.2019<o:p></o:p></span></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<i><span style='color: #002060; font-family: "Bookman Old Style","serif"; font-size: 10.0pt;'>shripurohitshri@gmail.com</span></i><span style='color: #002060; font-family: "Bookman Old Style","serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<i><span style='background: white; color: #002060; font-family: "Bookman Old Style","serif"; font-size: 10.0pt;'>notes@merehain:copyright reserved</span></i><span style='color: #002060; font-family: "Bookman Old Style","serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div style="margin-bottom: .0001pt; margin: 0in;">
+<br/></div>
+<div style="background: #00B050; margin-bottom: .0001pt; margin: 0in; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<span style='color: white; font-family: "Bookman Old Style","serif"; font-size: 10.0pt; mso-themecolor: background1;'>WEEK-2: LECTURE-10:C#.NET:MCA-III SEM:
+01.10PM - 02.10PM<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="background: #00B050; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<span style='color: white; font-family: "Bookman Old Style","serif"; font-size: 10.0pt; mso-bidi-font-weight: bold; mso-themecolor: background1;'>LECTURE-8: COMMAND
+LINE, INPUT FROM KEYBOARD, CONST, ENUM <o:p></o:p></span></div>
+<br/></div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,370 @@
+
+<html>
+    <head>
+        <title>
+LECTURE-5
+</title>
+
+<link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery.js"></script> 
+        <script> 
+            $(function(){
+                $("#menuHere").load("menu.html"); 
+                $("#headerHere").load("header.html");
+            });
+        </script> 
+    </head>
+
+    <body>
+      <div id="headerHere"></div>
+      <div id="menuHere"></div>
+      <div class="content">
+<div class="article-content entry-content" itemprop="articleBody"><div dir="ltr" style="text-align: left;" trbidi="on">
+<br/>
+<br/>
+<div class="MsoNormal">
+<br/></div>
+<div style="background: #00B050; margin-bottom: .0001pt; margin: 0in; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<br/></div>
+<div align="center" class="MsoNormal" style="text-align: center;">
+<b><span style='color: #ff0066; font-family: "bookman old style" , "serif"; font-size: 72.0pt;'>C#</span></b><span style="color: #ff0066; font-size: 13.5pt;"><o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal" style="background: #00B050; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal" style="tab-stops: 139.0pt;">
+<b style="mso-bidi-font-weight: normal;"><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 14.0pt;'>.NET FRAMEWORK FIRST PROGRAM<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="tab-stops: 139.0pt;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 8.0pt;'> <span style="mso-tab-count: 1;">                                             </span></span><span style="color: black; font-size: 13.5pt;"><o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l4 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>.NET framework comes along with windows7 operating system
+(true/false).<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l4 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>How to configure .NET framework for command line <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l4 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Write, compile and execute first program from command line.<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red; font-size: 11.0pt;">CONFIGURE .NET
+FRAMEWORK FOR COMMANDLINE<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l1 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>open
+DOS command prompt<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l1 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">2.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>cd\<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l1 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">3.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>echo
+%path%<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l1 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">4.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;"> </span>set path =
+%path%;C:\Windows\Microsoft.NET\Framework\v3.5;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-spacerun: yes;">    </span>Now you can compile and execute any program
+written in .net compatible language<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red; font-size: 11.0pt;">FIRST PROGRAM IN
+C#.NET:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'>using
+System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;"> </span>class Hello <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">        </span>static void Main() <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">            </span>Console.WriteLine("Hello
+World!");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">            </span>Console.WriteLine("Press any
+key to exit.");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">            </span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Make
+a folder in any of the drive ( C:/myprograms)<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">2.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Write
+the above program in notepad editor <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">3.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Save
+the file as<span style="mso-spacerun: yes;">  </span>: hello.cs // it is a source
+code <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">4.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Goto
+DOS command prompt and configure the .net framework path <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">5.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>C:\myprograms&gt;csc
+hello.cs // this command will create<span style="mso-spacerun: yes;"> 
+</span>hello.exe file<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">6.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>C:\myprograms&gt;hello
+// or hello.exe <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red; font-size: 11.0pt;">FIRST PROGRAM IN
+VB.NET:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'>Imports
+System<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'>Module
+Module<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">   </span>Sub Main()<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">      </span>Console.WriteLine("Hello
+World")<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">      </span>Console.ReadKey()<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">   </span>End Sub<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'>End
+Module<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Make
+a folder in any of the drive ( C:/myprograms)<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">2.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Write
+the above program in notepad editor <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">3.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Save
+the file as<span style="mso-spacerun: yes;">  </span>: hello.vb // it is a source
+code <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">4.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Goto
+DOS command prompt and configure the .net framework path <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">5.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>C:\myprograms&gt;vbc
+hello.vb // this command will create<span style="mso-spacerun: yes;"> 
+</span>hello.exe file<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'><span style="mso-list: Ignore;">6.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>C:\myprograms&gt;hello
+// or hello.exe <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red; font-size: 11.0pt;">MAKING .EXE FILE
+WITH ANY NAME <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'>using
+System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;"> </span>class Hello <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">        </span>static void Main() <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">            </span>Console.WriteLine("Hello
+World!");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">            </span>Console.WriteLine("Press any
+key to exit.");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">            </span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: #0070c0;">On command prompt:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>C:\myprograms&gt;csc
+/out: xyz.exe<span style="mso-spacerun: yes;">  </span>hello.cs <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red; font-size: 11.0pt;">MAKING SINGLE .EXE
+FILE USING TWO .CS FILES:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: #0070c0; font-family: "bookman old style" , "serif";'>hello.cs <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'>using
+System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;"> </span>class Hello <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">        </span>static void Main() <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">            </span>A<span style="mso-spacerun: yes;">  
+</span>xyz=new A();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">                </span>Xyz.display();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">            </span>Console.WriteLine("Press any
+key to exit.");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">            </span>Console.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: #0070c0; font-family: "bookman old style" , "serif";'>a.cs<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'>using
+System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;"> </span>class A <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">        </span>void display() <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">            </span>Console.WriteLine(" Good
+Morning…………………");<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 11.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: #0070c0; font-family: "bookman old style" , "serif";'>on command prompt<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>C:\myprograms&gt;csc
+hello.cs<span style="mso-spacerun: yes;">  </span>a.cs<span style="mso-spacerun: yes;">    </span><o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>C:\myprograms&gt;hello<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>If
+you make more than one .cs files then you can combine them as single .exe as
+follows:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>C:\myprograms&gt;csc
+<span style="mso-spacerun: yes;"> </span>*.cs<span style="mso-spacerun: yes;">   
+</span><o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>REFERENCES:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraph" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo5; text-indent: -.25in;">
+<!--[if !supportLists]--><span style="mso-bidi-font-size: 10.0pt;"><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>      </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><a href="https://proxysite.cloud/Youtube/index.php?q=nqXY1aeeYZHdqttg2tLZq62Tx5TIn9ORl5iR1NSVoGOLdJjbnqqdmcqaw6OOs8yKhpiwr5yer9k"><span style="background: white; border: none 1.0pt; color: #333333; padding: 0in; text-decoration: none;">Enterprise
+Application Development</span></a>: <span style="mso-spacerun: yes;"> </span>youtube channel <span style="color: black;"><o:p></o:p></span></span></div>
+<div style="margin-bottom: .0001pt; margin: 0in;">
+<br/></div>
+<div style="margin-bottom: .0001pt; margin: 0in;">
+<br/></div>
+<div align="right" style="margin-bottom: .0001pt; margin: 0in; text-align: right;">
+<b><i><span style='color: #ff0066; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>ManojPurohit</span></i></b><b style="mso-bidi-font-weight: normal;"><span style='color: #ff0066; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'><o:p></o:p></span></b></div>
+<div align="right" style="margin-bottom: .0001pt; margin: 0in; text-align: right;">
+<b style="mso-bidi-font-weight: normal;"><i><span style='color: #00b050; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>shripurohitshri@gmail.com</span></i></b><b style="mso-bidi-font-weight: normal;"><span style='color: #00b050; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'><o:p></o:p></span></b></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<br/></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<br/></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<span style='color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>01.08.2019<o:p></o:p></span></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<i><span style='color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>shripurohitshri@gmail.com</span></i><span style='color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<i><span style='background: white; color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>notes@merehain:copyright reserved</span></i><span style='color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div style="margin-bottom: .0001pt; margin: 0in;">
+<br/></div>
+<div style="background: #00B050; margin-bottom: .0001pt; margin: 0in; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<span style='color: white; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>WEEK-1: LECTURE-5:C#.NET:MCA-III SEM:
+10.00AM - 11.00PM<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="background: #00B050; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<span style='color: white; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>LECTURE-5: FIRST
+PROGRAM FROM COMMAND LINE </span><span style="color: white; font-size: 11.0pt;"><o:p></o:p></span></div>
+<br/></div>
+</div>
+</div>
+</body>
+</html>
