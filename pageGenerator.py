@@ -71,13 +71,13 @@ soup = BeautifulSoup(page_source, 'lxml')
 print('SAVING POSTS...')
 
 for li in soup.ol:
-    title = (((li.h1.a.text).strip()).replace(':', ' ')).replace(' ', '-')
+    title = ((((li.h1.a.text).strip()).replace(':', ' ')).replace(' ', '-')).replace('#', 's')
     contentDiv = li.find('div', class_='article-content entry-content')
     with open(title + '.html', 'w+', encoding="utf-8") as f:
         f.write(titleOpenHtml + title + titleCloseHtml + topHtml + str(contentDiv) + bottomHtml)
         f.close()
     print('Created ' + title + '.html')
-    menuLinks = '<li><a href="' + title + '.html' + '">' + title + '</a></li>' + menuLinks + '\n'
+    menuLinks = '\n' + '<li><a href="' + title.replace('-', ' ') + '.html' + '">' + title + '</a></li>' + menuLinks
 
 print('SAVED POSTS!')
 print('CREATING MENU...')
