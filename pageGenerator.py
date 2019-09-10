@@ -19,6 +19,7 @@ titleCloseHtml = '''
 
 topHtml = '''
 <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
         <script src="js/jquery.js"></script> 
         <script> 
             $(function(){
@@ -64,9 +65,11 @@ soup = BeautifulSoup(page_source, 'lxml')
 print('SAVING POSTS...')
 
 for li in soup.ol:
-    title = ((li.h1.a.text).strip()).replace(':', ' ')
+    title = (((li.h1.a.text).strip()).replace(':', ' ')).replace(' ', '-')
     contentDiv = li.find('div', class_='article-content entry-content')
     with open(title + '.html', 'w+') as f:
         f.write(titleOpenHtml + title + titleCloseHtml + topHtml + str(contentDiv) + bottomHtml)
         f.close()
     print('Created ' + title + '.html')
+
+print('SAVED POSTS!')
