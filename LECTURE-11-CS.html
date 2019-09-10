@@ -1,0 +1,560 @@
+
+<html>
+    <head>
+        <title>
+LECTURE-11-CS
+</title>
+
+<link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery.js"></script> 
+        <script> 
+            $(function(){
+                $("#menuHere").load("menu.html"); 
+            });
+        </script> 
+    </head>
+
+    <body>
+      <div id="menuHere"></div>
+      <div class="content">
+<div class="article-content entry-content" itemprop="articleBody"><div dir="ltr" style="text-align: left;" trbidi="on">
+<br/>
+<div align="center" class="MsoNormal" style="text-align: center;">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "Bookman Old Style","serif"; font-size: 72.0pt;'>C#<o:p></o:p></span></b></div>
+<div align="center" class="MsoNormal" style="text-align: center;">
+<b style="mso-bidi-font-weight: normal;"><span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>PROGRAMMING CONCEPTS <o:p></o:p></span></b></div>
+<div class="MsoNormal">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'><o:p> </o:p></span></b><b><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'><o:p> </o:p></span></b></div>
+<div class="MsoNormal">
+<b style="mso-bidi-font-weight: normal;"><span style='color: #0070c0; font-family: "Bookman Old Style","serif";'>Functions in C# </span></b><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: 0in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What
+is subroutine<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">2.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What
+is procedure<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">3.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What
+is function<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">4.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What
+is method <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">5.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What
+is difference among subroutine, procedure, function, and method<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">6.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What
+is return <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">7.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What
+is return type<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">8.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What
+is data type of function<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">9.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What
+is parameter passing <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">10.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What is the
+advantage of using functions in programming<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">11.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What is local
+variable<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">12.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What are
+default values for local variables in C#.<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">13.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What is an
+explicit value assignment local variable in C#, why it is done by programmer or
+developer explicitly.<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">14.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What is the
+scope of local variable<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">15.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>How to write
+function body <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">16.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>How to call
+function logic<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">17.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What is void<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">18.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What is actual
+parameter<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">19.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What is formal
+parameter<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">20.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What is Main
+function in programming <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">21.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What is Main
+function in C# programming<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">22.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What are
+signature of Main function in C#<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">23.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What is return
+keyword? What it does, why it is used , where it is used<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">24.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>What is void
+keyword? What it does, why it is used, where it is used<o:p></o:p></span></div>
+<div class="MsoNormal">
+<b><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'><o:p><br/></o:p></span></b></div>
+<div class="MsoNormal">
+<b><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'><o:p><br/></o:p></span></b></div>
+<div class="MsoNormal">
+<b><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'><o:p><br/></o:p></span></b></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>Program-1</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>:procedure
+oriented approach<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>using</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>class</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: #2b91af; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>Program</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>" Hello World"</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>}<span style="mso-spacerun: yes;">     </span><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "Bookman Old Style","serif"; mso-bidi-font-family: Consolas;'>P</span><span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>rogram - 2</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>: procedure/function oriented approach<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;"> </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>using</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>class</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: #2b91af; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>Program</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span>hello();<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;"> 
+</span>hello()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>" Hello World"</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "Bookman Old Style","serif"; mso-bidi-font-family: Consolas;'>P</span><span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>rogram-3</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>:function oriented approach and </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>return</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> statement.<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>using</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>class</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: #2b91af; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>Program</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>string</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>
+str=hello();<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(str);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>string</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">  </span>hello()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>return</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"Hello World"</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "Bookman Old Style","serif"; mso-bidi-font-family: Consolas;'>P</span><span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>rogram-4</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> : parameter passing ( one argument supply)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>using</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>class</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: #2b91af; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>Program</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.Write(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"Please enter you name:
+"</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>string</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> name1=
+Console.ReadLine();<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>SayHello(name1);<span style="mso-spacerun: yes;">        </span><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;"> 
+</span>SayHello(</span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>string</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> name2)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"Hello "</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>+name2);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "Bookman Old Style","serif"; mso-bidi-font-family: Consolas;'>P</span><span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>rogram - 5:</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> actual and formal name of parameter can be same<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>using</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>class</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: #2b91af; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>Program</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.Write(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"Please enter you name:
+"</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>string</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> name=
+Console.ReadLine();<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>SayHello(name);<span style="mso-spacerun: yes;">       </span></span><span style='color: green; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>// actual parameter </span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;"> 
+</span>SayHello(</span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>string</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> name)</span><span style='color: green; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>// formal</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"Hello "</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>+name);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "Bookman Old Style","serif"; mso-bidi-font-family: Consolas;'>P</span><span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>rogram-6</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>: supply two arguments to a function and </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>return</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> the
+processed result.<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>using</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>class</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: #2b91af; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>Program</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.Write(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"Please first number : "</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> a =</span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>.Parse( Console.ReadLine());<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.Write(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"Please second number :
+"</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> b = </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>.Parse(Console.ReadLine());<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> result = Addition(a,b);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"Addition =<span style="mso-spacerun: yes;">  </span>"</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> + result);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;"> 
+</span>Addition(</span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> a, </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> b)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>return</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> a + b;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       </span><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "Bookman Old Style","serif"; mso-bidi-font-family: Consolas;'>P</span><span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>rogram-7:</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> scope of local variables - local to block only bydefault<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>using</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>class</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: #2b91af; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>Program</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> a = 10;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"value of a before funciton
+calling ="</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>+a);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span>display(a);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"value of a after funciton
+calling ="</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> + a);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;"> 
+</span>display(</span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> a)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span>a = a + 10;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"value of a within function
+body ="</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> + a);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "Bookman Old Style","serif"; mso-bidi-font-family: Consolas;'>P</span><span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>rogram-8:</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> use of </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>ref</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> keyword - </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>for</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> local variables <o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>using</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>class</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: #2b91af; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>Program</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> a = 10;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"value of a before funciton
+calling ="</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> + a);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span>display(</span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>ref</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> a);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"value of a after funciton
+calling ="</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> + a);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> display(</span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>ref</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> a)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span>a = a + 10;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"value of a within function
+body ="</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> + a);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "Bookman Old Style","serif"; mso-bidi-font-family: Consolas;'>P</span><span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>rogram-9:</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> Rule: local variable must be intialized explicitly<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>using</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>class</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: #2b91af; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>Program</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> a;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"value of a before funciton
+calling ="</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>+a);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<span style="mso-spacerun: yes;">   </span><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "Bookman Old Style","serif"; mso-bidi-font-family: Consolas;'>P</span><span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>rogram-10:</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 10.0pt; mso-bidi-font-family: Consolas;'> use of </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 10.0pt; mso-bidi-font-family: Consolas;'>out</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 10.0pt; mso-bidi-font-family: Consolas;'> keyword </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 10.0pt; mso-bidi-font-family: Consolas;'>for</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 10.0pt; mso-bidi-font-family: Consolas;'> uninitialized local variables to initiaze </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 10.0pt; mso-bidi-font-family: Consolas;'>in</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 10.0pt; mso-bidi-font-family: Consolas;'> another block<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>using</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>class</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: #2b91af; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>Program</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> a ;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span>display(</span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>out</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> a);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"value of a after funciton
+calling ="</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> + a);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>static</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>void</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> display(</span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>out</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>int</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> a)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">        </span>a =10;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>"value of a within function
+body ="</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'> + a);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 11.0pt; mso-bidi-font-family: Consolas;'>}<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<br/></div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1065 @@
+
+<html>
+    <head>
+        <title>
+LECTURE-7-CS
+</title>
+
+<link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery.js"></script> 
+        <script> 
+            $(function(){
+                $("#menuHere").load("menu.html"); 
+            });
+        </script> 
+    </head>
+
+    <body>
+      <div id="menuHere"></div>
+      <div class="content">
+<div class="article-content entry-content" itemprop="articleBody"><div dir="ltr" style="text-align: left;" trbidi="on">
+<br/>
+<div align="center" class="MsoNormal" style="text-align: center;">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "bookman old style" , "serif"; font-size: 72.0pt;'>C#<o:p></o:p></span></b></div>
+<div align="center" class="MsoNormal" style="text-align: center;">
+<b style="mso-bidi-font-weight: normal;"><span style='color: red; font-family: "bookman old style" , "serif";'>LANGUAGE FUNDAMENTALS</span></b></div>
+<div class="MsoNormal">
+<br/>
+<div style='background-color: white; color: #333333; font-family: "Helvetica Neue Light", HelveticaNeue-Light, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; margin: 0in; outline: none; padding: 0px;'>
+<span style="color: black; font-size: 13.5pt;">16.08.2018: 02.10PM – 03.10PM<o:p></o:p></span></div>
+<div class="MsoNormal" style='background-color: white; color: #333333; font-family: "Helvetica Neue Light", HelveticaNeue-Light, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; margin: 0px; outline: none; padding: 0px; text-align: justify;'>
+<b><span style='font-family: "Bookman Old Style", serif; font-size: 8pt;'>=================================================================================================</span></b></div>
+</div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-layout-grid-align: none; mso-list: l4 level1 lfo1; text-autospace: none; text-indent: -.25in;">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div align="center" class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-layout-grid-align: none; text-align: center; text-autospace: none;">
+<b style="mso-bidi-font-weight: normal;"><span style='color: black; font-family: "bookman old style" , "serif"; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>Variable and constant<o:p></o:p></span></b></div>
+<div align="center" class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-layout-grid-align: none; text-align: center; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Questions:
+Variables and Constants <o:p></o:p></span></b></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>What
+is variable?<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">2.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>What
+is constant?<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Questions:
+points<o:p></o:p></span></b></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l7 level1 lfo9; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Variable
+name should be meaningful, it enhance the code readability and
+understandability (name,age,salary)<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l7 level1 lfo9; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">2.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>It
+can be upper case, lower case, and combination of both<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l7 level1 lfo9; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">3.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Variables
+must be declared before use<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l7 level1 lfo9; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">4.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Variables
+should be defined with its type<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p> </o:p></span><span style='font-family: "bookman old style" , serif; font-size: 8pt;'> </span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div align="center" class="MsoNormal" style="text-align: center;">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "bookman old style" , "serif";'>Keywords<o:p></o:p></span></b></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p> </o:p></span><span style='font-family: "bookman old style" , serif; font-size: 8pt;'> </span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Questions:
+Keywords<o:p></o:p></span></b></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l9 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>What
+is word <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l9 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">2.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>What
+is reserve word<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l9 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">3.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>What
+is the meaning of<span style="mso-spacerun: yes;">  </span>keywords<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l9 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">4.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Need
+of keywords <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l9 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">5.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Importance
+of keywords<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l9 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">6.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>How
+many keywords in C# programming language =77<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l9 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">7.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>What
+are rules for keywords<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l9 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">8.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Can
+we write and compile a C# program without using any keyword of C# programming
+language <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0in; mso-add-space: auto;">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Rules for keywords:<o:p></o:p></span></b></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>All
+keywords are lowercase words<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">2.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>The
+same keywords cannot be used together in the same statement<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo4; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">3.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Keywords
+cannot be used as a name of variable, method, class, interface, namespace, etc.
+<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>i.e.
+Keywords<span style="mso-spacerun: yes;">  </span>cannot be used as identifiers<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-left: -.25in;">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraph" style="margin-left: 0in; mso-add-space: auto;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Program
+– 1:</span><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>
+</span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Please
+count how many keywords used in the program below:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "courier new"; font-size: 10.0pt;'>using</span><span style='font-family: "courier new"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "courier new"; font-size: 10.0pt;'>namespace</span><span style='font-family: "courier new"; font-size: 10.0pt;'> hello<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span><span style="color: blue;">class</span> <span style="color: #2b91af;">HelloWorld<o:p></o:p></span></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span><span style="color: blue;">static</span> <span style="color: blue;">void</span> Main(<span style="color: blue;">string</span>[]
+args)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">            </span><span style="color: #2b91af;">Console</span>.WriteLine(<span style="color: #a31515;">"Hello World"</span>);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">            </span><span style="color: #2b91af;">Console</span>.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraph" style="margin-left: 0in; mso-add-space: auto;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Program
+– 2:</span><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>
+</span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Will
+the following program compile by C# compiler. <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>hello<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span><span style="color: #2b91af;">HelloWorld<o:p></o:p></span></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Main(<span style="color: blue;">string</span>[]
+args)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">            </span><span style="color: #2b91af;">Console</span>.WriteLine(<span style="color: #a31515;">"Hello World"</span>);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">            </span><span style="color: #2b91af;">Console</span>.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p> </o:p></span><span style='font-family: "bookman old style" , serif; font-size: 8pt;'> </span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Keywords in C#:<o:p></o:p></span></b></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse: collapse; border: none; margin-left: .5in; mso-border-alt: solid windowtext .5pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext; mso-padding-alt: 0in 5.4pt 0in 5.4pt; mso-yfti-tbllook: 1184;">
+<tbody>
+<tr style="mso-yfti-firstrow: yes; mso-yfti-irow: 0;">
+<td style="border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 62.55pt;" valign="top" width="83"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Abstract</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-left: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>As</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-left: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Base</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-left: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>bool</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-left: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>break</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-left: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>byte<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 62.55pt;" valign="top" width="83"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Case</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>catch</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Char</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>checked</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>class</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>const<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 2;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 62.55pt;" valign="top" width="83"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Continue</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>decimal</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>default</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>delegate</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>do</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>double<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 3;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 62.55pt;" valign="top" width="83"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Else</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>enum</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Event</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>explicit</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>extern</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>false<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 4;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 62.55pt;" valign="top" width="83"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Finally</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>fixed</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Float</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>for</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>foreach</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>goto<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 5;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 62.55pt;" valign="top" width="83"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>If</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>implicit</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>In</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>int</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>interface</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>internal<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 6;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 62.55pt;" valign="top" width="83"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Is</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>lock</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Long</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>namespace</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>new</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>null<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 7;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 62.55pt;" valign="top" width="83"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Object</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>operator</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Out</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>override</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>params</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>private<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 8;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 62.55pt;" valign="top" width="83"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Protected</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>public</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>readonly</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>ref</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>return</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>sbyte<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 9;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 62.55pt;" valign="top" width="83"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Sealed</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>short</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>sizeof</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>stackalloc</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>static</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>string<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 10;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 62.55pt;" valign="top" width="83"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Struct</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>switch</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>This</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>throw</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>true</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>try<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 11;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 62.55pt;" valign="top" width="83"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Typeof</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>uint</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>ulong</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>unchecked</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>unsafe</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>ushort<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 12; mso-yfti-lastrow: yes;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 62.55pt;" valign="top" width="83"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Using</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>virtual</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Void</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>volatile</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>while</span></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 67.95pt;" valign="top" width="91"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<br/></div>
+</td>
+</tr>
+</tbody></table>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: center;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p> </o:p></span><b style="text-align: center;"><span style='font-family: "bookman old style" , "serif";'>Identifiers</span></b></div>
+<br/>
+<div align="center" class="MsoNormal" style="text-align: center;">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoNormal">
+<b><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Questions:
+Identifiers <o:p></o:p></span></b></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l1 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>1.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>What
+is Identifier<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l1 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>2.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>What
+is the need of Identifier<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l1 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>3.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Importance
+of Identifiers<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l1 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>4.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>What
+are rules for using Identifiers in C#<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l1 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>5.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Can
+we write and compile a C# program without using any Identifier of C#
+programming language <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0in; mso-add-space: auto;">
+<b><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Rules for Identifiers:<o:p></o:p></span></b></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>1.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Can
+be in upper case or lower case<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>2.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Can
+be of any length <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>3.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Can
+not begin with a  number<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>4.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Underscore(_)
+is allowed <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>5.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>There
+should not be space between two word – which define identifier<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>6.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>The
+name may consist of letters, digits, and underscore<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>7.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>They
+must not begin with a digit<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>8.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>It
+should not a keyword<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>9.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>White
+space are not allowed<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: 0in; mso-add-space: auto;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Program
+– 1:</span><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>
+</span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Please
+count how many identifiers are used in the program.<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: blue; font-family: "courier new"; font-size: 10.0pt;'>using</span><span style='font-family: "courier new"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: blue; font-family: "courier new"; font-size: 10.0pt;'>namespace</span><span style='font-family: "courier new"; font-size: 10.0pt;'> hello<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>    <span style="color: blue;">class</span> <span style="color: #2b91af;">HelloWorld<o:p></o:p></span></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>    {<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>        <span style="color: blue;">static</span> <span style="color: blue;">void</span> Main(<span style="color: blue;">string</span>[]
+args)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>        {<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>            <span style="color: #2b91af;">Console</span>.WriteLine(<span style="color: #a31515;">"Hello World"</span>);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>            <span style="color: #2b91af;">Console</span>.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>        }<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>    }<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoListParagraph" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraph" style="margin-left: 0in; mso-add-space: auto;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Program
+– 2:</span><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>
+</span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Will
+the C# compiler understand the code correctly. Will it compile<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: blue; font-family: "courier new"; font-size: 10.0pt;'>using</span><span style='font-family: "courier new"; font-size: 10.0pt;'> ;<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: blue; font-family: "courier new"; font-size: 10.0pt;'>namespace</span><span style='font-family: "courier new"; font-size: 10.0pt;'> <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>    <span style="color: blue;">class</span> <span style="color: #2b91af;"><o:p></o:p></span></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>    {<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>        <span style="color: blue;">static</span> <span style="color: blue;">void</span> (<span style="color: blue;">string</span>[] args)<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>        {<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>            <span style="color: #2b91af;">Console</span>.WriteLine(<span style="color: #a31515;">"Hello World"</span>);<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>            <span style="color: #2b91af;">Console</span>.ReadKey();<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>        }<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>    }<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "courier new"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoListParagraph" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<br/>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div align="center" class="MsoNormal" style="text-align: center;">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "bookman old style" , "serif";'>Data types</span></b><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l8 level1 lfo10; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 8.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>         
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Size
+<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l8 level1 lfo10; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 8.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>         
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Default
+values<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l8 level1 lfo10; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 8.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>         
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Ranges
+<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l8 level1 lfo10; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 8.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>         
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Memory
+allocation<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoNormal">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Questions: Data
+Types<o:p></o:p></span></b></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What is data</span></div>
+<div class="MsoListParagraphCxSpFirst" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<span style='font-family: "bookman old style" , serif; font-size: 8pt; line-height: 115%; text-indent: -0.25in;'>2.<span style='font-family: "times new roman"; font-size: 7pt; font-stretch: normal; line-height: normal;'>    
+</span></span><span style='font-family: "bookman old style" , serif; font-size: 8pt; line-height: 115%; text-indent: -0.25in;'>What types of data we handle in real
+life</span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">3.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What is data type ( value types are keywords)<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">4.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What is the need of data types <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">5.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What are different types of types in
+C#<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">6.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What is value type ( System.Value)<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">7.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What is reference type(System.Object)<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">8.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What is pointer type <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">9.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What is System.ValueType<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">10.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What
+is System.Object<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">11.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What
+memory area is allocated to value type<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">12.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What
+memory are is allocated to Reference type<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">13.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What
+is stack <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">14.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What
+is heap<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">15.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What
+is difference between value type and reference type<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">16.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What
+are pre-defined type in C#<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">17.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What
+is user defined types in C#<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">18.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What
+is primitive data type<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">19.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What
+is non- primitive type<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">20.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>What is
+classification of data type( pre-defined or built – in <span style="mso-spacerun: yes;"> </span>, user defined)<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">21.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>What is
+classification of data type( Value Types , Reference Types, Pointer Types)<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">22.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>What is CTS<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">23.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>What is the
+importance of CTS<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">24.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What
+is unsafe type<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">25.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>C#
+is strongly typed language, explain <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">26.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What
+are default values of different value type<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">27.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What
+is the default value of reference type<span style="mso-spacerun: yes;">  </span><o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">28.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>what
+is<span style="mso-spacerun: yes;">  </span>different ranges of different value
+types [write a program to know ]<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">29.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>C#
+is strongly typed language, explain<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="line-height: 115%; margin-bottom: 10.0pt; margin-left: .25in; margin-right: 0in; margin-top: 0in; mso-add-space: auto; mso-list: l3 level1 lfo7; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'><span style="mso-list: Ignore;">30.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; line-height: 115%;'>What
+are built-in data types in C#.<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0in; mso-add-space: auto;">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Important Points about data types:<o:p></o:p></span></b></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l5 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>All
+value types are keywords<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l5 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">2.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>All
+value types are derived from System.Value <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l5 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">3.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>All
+value types stored in stack memory area<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l5 level1 lfo8; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">4.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>All
+reference type get memory from heap area<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l5 level1 lfo8; text-indent: -.25in;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><span style="mso-list: Ignore;">.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p> </o:p></span><span style='font-family: "bookman old style" , serif; font-size: 8pt;'> </span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto;">
+<b><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Value Types:</span></b></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div align="center">
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse: collapse; border: none; mso-border-alt: solid windowtext .5pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext; mso-padding-alt: 0in 5.4pt 0in 5.4pt; mso-table-layout-alt: fixed; mso-yfti-tbllook: 480; width: 528px;">
+<tbody>
+<tr style="mso-yfti-firstrow: yes; mso-yfti-irow: 0; page-break-inside: avoid;">
+<td style="background: #F2F2F2; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Data
+  Types<o:p></o:p></span></div>
+</td>
+<td style="background: #F2F2F2; border-left: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Default
+  Value<o:p></o:p></span></div>
+</td>
+<td style="background: #F2F2F2; border-left: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Minimum
+  Value<o:p></o:p></span></div>
+</td>
+<td style="background: #F2F2F2; border-left: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Maximum
+  Value<o:p></o:p></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Sbyte<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>-128<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>127<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 2; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Byte<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>255<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 3; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Short<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>-32768<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>32767<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 4; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Ushort<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>65535<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 5; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Int<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>-2147483648<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>2147483647<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 6; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Uint<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0u<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>4294967295<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 7; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Long<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0L<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>-9223372036854775808<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>9223372036854775807<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 8; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Ulong<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0u<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>18446744073709551615<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 9; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Float<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0.0f<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>±1</span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>.5×10</span><span class="Code"><sup><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>-45</span></sup></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>±</span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>3.4×10</span><span class="Code"><sup><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>38</span></sup></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 10; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Double<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0.0d<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>±</span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>5.0×10</span><span class="Code"><sup><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>-324</span></sup></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>±</span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>1.7×10</span><span class="Code"><sup><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>308</span></sup></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 11; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Decimal<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>0.0m<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>±</span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>1.0×10</span><span class="Code"><sup><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>-28</span></sup></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>±</span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>7.9×10</span><span class="Code"><sup><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>28</span></sup></span><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 12; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Bool<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>False<o:p></o:p></span></span></div>
+</td>
+<td colspan="2" style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 274.8pt;" width="366"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>Two
+  possible values: <span class="Code"><span style='font-family: "bookman old style" , "serif"; font-weight: normal;'>true</span></span> and <span class="Code"><span style='font-family: "bookman old style" , "serif"; font-weight: normal;'>false</span></span><o:p></o:p></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 13; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Char<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>'\u0000'<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>'\u0000'<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>'\uffff'<o:p></o:p></span></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 14; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Object<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Null<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div align="center" class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt; text-align: center;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>-<o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div align="center" class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt; text-align: center;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>-<o:p></o:p></span></div>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 15; mso-yfti-lastrow: yes; page-break-inside: avoid;">
+<td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.65pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>String<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 60.9pt;" width="81"><div class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt;">
+<span class="Code"><span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt; font-weight: normal;'>Null<o:p></o:p></span></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 136.5pt;" width="182"><div align="center" class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt; text-align: center;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>-<o:p></o:p></span></div>
+</td>
+<td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 138.3pt;" width="184"><div align="center" class="MsoNormal" style="margin-bottom: 3.0pt; margin-left: 0in; margin-right: 0in; margin-top: 3.0pt; text-align: center;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 8.0pt;'>-<o:p></o:p></span></div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<br/></div>
+</div>
+</div>
+</body>
+</html>

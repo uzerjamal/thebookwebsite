@@ -1,0 +1,108 @@
+
+<html>
+    <head>
+        <title>
+LECTURE-16-CS-17.09.2018
+</title>
+
+<link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery.js"></script> 
+        <script> 
+            $(function(){
+                $("#menuHere").load("menu.html"); 
+            });
+        </script> 
+    </head>
+
+    <body>
+      <div id="menuHere"></div>
+      <div class="content">
+<div class="article-content entry-content" itemprop="articleBody"><div dir="ltr" style="text-align: left;" trbidi="on">
+<div align="center" class="MsoNormal" style="text-align: center;">
+<br/>
+<div class="MsoNormal" style="text-align: center;">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "Bookman Old Style","serif"; font-size: 72.0pt;'>C#<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="text-align: center;">
+<b style="mso-bidi-font-weight: normal;"><span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>PROGRAMMING CONCEPTS <o:p></o:p></span></b></div>
+<div class="MsoNormal" style="text-align: left;">
+<br/></div>
+<div class="MsoNormal" style="text-align: left;">
+<br/></div>
+<div class="MsoNormal" style="text-align: left;">
+<b style="mso-bidi-font-weight: normal;"><span style='color: #0070c0; font-family: "Bookman Old Style","serif";'>INHERITANCE,
+ABSTRACT CLASS, INTERFACE</span></b><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="text-align: left;">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>     </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>Inheritance<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">2.<span style='font: 7.0pt "Times New Roman";'>     </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>Importance of inheritance,<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">3.<span style='font: 7.0pt "Times New Roman";'>     </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>advantages of inheritance<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">4.<span style='font: 7.0pt "Times New Roman";'>     </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>IS-A relationship<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">5.<span style='font: 7.0pt "Times New Roman";'>     </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>reusability <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">6.<span style='font: 7.0pt "Times New Roman";'>     </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>overriding <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">7.<span style='font: 7.0pt "Times New Roman";'>     </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>extendibility <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">8.<span style='font: 7.0pt "Times New Roman";'>     </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>different type of inheritance<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">9.<span style='font: 7.0pt "Times New Roman";'>     </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>Single inheritance<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">10.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>Multi-level inheritance<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">11.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>Multiple inheritance<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">12.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>Hierarchical inheritance<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">13.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>Hybrid inheritance<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">14.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>Constructor in inheritance<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">15.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>base keyword<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">16.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>accessibility of members in inheritance: </span><span style='color: blue; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>protected</span><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'> members and inheritance<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">17.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>method signature and inheritance<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">18.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>Typecasting in inheritance : up casting and down casting <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">19.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>Concrete class<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">20.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>Abstract class<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">21.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>Interface <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">22.<span style='font: 7.0pt "Times New Roman";'>  </span></span></span><!--[endif]--><span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: Consolas; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin;'>multiple inheritance with (concrete classes, interface)<o:p></o:p></span></div>
+<div class="MsoNormal" style="text-align: left;">
+<br/></div>
+<div class="MsoNormal" style="text-align: left;">
+<span style='color: red; font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>Questions:<o:p></o:p></span></div>
+<div class="MsoNormal" style="text-align: left;">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>Do
+all members of parent class inherit into child class<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: 0.25in; text-align: left; text-indent: -0.25in;">
+<!--[if !supportLists]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt; mso-bidi-font-family: "Bookman Old Style"; mso-fareast-font-family: "Bookman Old Style";'><span style="mso-list: Ignore;">2.<span style='font: 7.0pt "Times New Roman";'>    
+</span></span></span><!--[endif]--><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>Do
+all public members of parent class inherit into child class.<o:p></o:p></span></div>
+<div class="MsoNormal" style="text-align: left;">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: 0in; text-align: left;">
+<br/></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: 0in; text-align: left;">
+<span style='color: black; font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'>17.09.2018:
+03.10 - 04.10</span><span style='font-family: "Bookman Old Style","serif"; font-size: 8.0pt;'><o:p></o:p></span></div>
+<div style="text-align: left;">
+<br/></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

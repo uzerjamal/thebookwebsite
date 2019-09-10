@@ -1,0 +1,1000 @@
+
+<html>
+    <head>
+        <title>
+LAB---9---CS---MCA-III-30.10.2018
+</title>
+
+<link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery.js"></script> 
+        <script> 
+            $(function(){
+                $("#menuHere").load("menu.html"); 
+            });
+        </script> 
+    </head>
+
+    <body>
+      <div id="menuHere"></div>
+      <div class="content">
+<div class="article-content entry-content" itemprop="articleBody"><div dir="ltr" style="text-align: left;" trbidi="on">
+<div align="center" class="MsoNormal" style="text-align: center;">
+<b><span style='color: #0070c0; font-family: "bookman old style" , "serif"; mso-ansi-language: EN-US;'>LAB – ASSIGNMENT<o:p></o:p></span></b><br/>
+<b><span style='color: #0070c0; font-family: "bookman old style" , "serif"; mso-ansi-language: EN-US;'><br/></span></b></div>
+<div class="MsoNormal">
+<b><span style='font-family: "bookman old style" , "serif"; font-size: 12pt; line-height: 18.4px;'>Programming Exercises: </span></b></div>
+<div class="MsoNormal" style="text-align: justify; text-justify: inter-ideograph;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 12pt; line-height: 18.4px;'><br/></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0in;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 12pt;'>30.10.2018: 2.10AM – 03.10PM<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0in;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 12pt;'>----------------------------------------------------------------------------------------------<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: #0070c0; font-family: "bookman old style" , serif;'><b>LINQ</b></span><br/>
+<span style='color: #0070c0; font-family: "bookman old style" , serif;'><b><br/></b></span>
+<br/>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-1</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>:Display all elements of an array collection of integer
+values <o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>[] a = {1,2,3,4,5 };<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>foreach</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> (</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> y </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> a)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine(y);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-2:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Display even numbers from collection of integer elements
+of array <o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>[] a = {1,2,3,4,5 };<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>foreach</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> (</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> y </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> a)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">            </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>if</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>(y%2==0)</span><span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>// query for extracting
+even number</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine(y);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-3:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>LINQ to get even numbers from arrays of integers <o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>[] a = {1,2,3,4,5 };<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>IEnumerable&lt;</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>&gt; result = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>from</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> a<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">       </span></span><span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>// query varialbe<span style="mso-spacerun: yes;">         
+</span>where x % 2 == 0 // query expression with linq</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                                 
+</span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>select</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>foreach</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> (</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> y </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine(y);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-4:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> find </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>out</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> even number greater than 100 from array </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> LINQ<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>[] a = { 1, 2, 3, 4, 5,91,95,100,101,102,103,104,105,110};<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>IEnumerable&lt;</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>&gt; result = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>from</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> a<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                                 
+</span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>where</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x % 2 == 0 &amp;&amp; x
+&gt;100<span style="mso-spacerun: yes;">   </span></span><span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>//
+two conditions</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                                 
+</span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>select</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>foreach</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> (</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> y </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;"> </span><span style="mso-spacerun: yes;">           </span>Console.WriteLine(y);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-5:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> find </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>out</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> the students or employee whose name startswith </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"xy"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> or </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"xyz"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>[] name = { </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"amit"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"ramesh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"raju"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"vivek"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"raj"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"sunil"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"vinod"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"abhay"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>};<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>IEnumerable&lt;</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>&gt; result = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>from</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> name<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                                     </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>where</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x.StartsWith(</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"vi"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                           </span><span style="mso-spacerun: yes;">          </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>select</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>foreach</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> (</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> y </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine(y);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-6:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> find </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>out</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> the students or employee whose name Endswith </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"xy"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> or </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"xyz"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>[] name = { </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"amit"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"ramesh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"raju"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"vivek"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"raj"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"sunil"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"vinod"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"abhay"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"suresh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"mahesh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>};<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>IEnumerable&lt;</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>&gt; result = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>from</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> name<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                                     </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>where</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x.EndsWith(</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"sh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                                     </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>select</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>foreach</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> (</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> y </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine(y);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-7:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> find </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>out</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> the students or employee whose name contains keywords like </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"xy"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> or </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"xyz"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>[] name = { </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"amrish"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"ramesh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"rajshree"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"vivek"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"raj"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"sunil"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"vinod"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"abhay"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"suresh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"mahesh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>};<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>IEnumerable&lt;</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>&gt; result = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>from</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> name<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                                     </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>where</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x.Contains(</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"sh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                                     </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>select</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>foreach</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> (</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> y </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine(y);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-8:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> find </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>out</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> the students or employee whose name length </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>is</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> less than or greater than<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>[] name = { </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"amrish"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"ramesh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"rajshree"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"vivek"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"raj"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"sunil"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"vinod"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"abhay"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"suresh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"mahesh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>};<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>IEnumerable&lt;</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>&gt; result = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>from</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> name<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                                     </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>where</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x.Length&lt;=5<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                                     </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>select</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>foreach</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> (</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> y </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine(y);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-9:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> find </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>out</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> the students or employee whose name endswith ................with
+objects<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>// Collections : List Data Structure </span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>List&lt;Student&gt;
+list= </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> List&lt;Student&gt; ();<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Student s1 = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Student() { id=<span style="mso-spacerun: yes;"> 
+</span>101, name = </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"ramesh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>
+};<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Student s2 = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Student() { id = 102, name = </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"suresh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>
+};<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Student s3 = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Student() { id = 103, name = </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"raju"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">   </span>};<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>list.Add(s1);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>list.Add(s2);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>list.Add(s3);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">       
+</span>IEnumerable&lt;Student&gt; result = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>from</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> list<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                                      </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>where</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x.name.EndsWith(</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"sh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                                      </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>select</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>foreach</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> (Student y </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine(y.name);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Student</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> id { </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>get</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>set</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; }<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> name { </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>get</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>set</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; }<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-10:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> order by LINQ </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>for</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> list of students<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>// Collection: List type</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>List&lt;Student&gt;
+list= </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> List&lt;Student&gt; ();<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Student s1 = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Student() { id=<span style="mso-spacerun: yes;"> 
+</span>103, name=</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"ramesh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>};<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Student s2 = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Student() { id = 101, name = </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"suresh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>
+};<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Student s3 = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Student() { id = 102, name = </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"raju"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> };<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>list.Add(s1);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>list.Add(s2);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>list.Add(s3);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">       
+</span>IEnumerable&lt;Student&gt; result = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>from</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> list<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                                      </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>orderby</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x.id<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                                      </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>select</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>foreach</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> (Student y </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine(</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"ID = "</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>+y.id
++ </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"Name= "</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>
++y.name);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Student</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">  </span><span style="mso-spacerun: yes;">  </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> id { </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>get</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>set</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; }<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> name { </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>get</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>set</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; }<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Prorgram-11</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>: lamda expression with </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>delegate</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>delegate</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">  </span></span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>mydel</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>(</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> x);</span><span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>// deligate</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>[] a = { 1, 2, 3, 4, 5 };<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>mydel d= (x =&gt;
+x+x);<span style="mso-spacerun: yes;">  </span></span><span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>//
+lamda expresssion : input varialbes =&gt; expression for input variables</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result=d(2); </span><span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>//
+passing values in delegates for getting result of expression for input 2</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">       
+</span>Console.WriteLine(result);<span style="mso-spacerun: yes;">              
+</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-12: </span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>LAMDA EXPRESSION, LINQ, and WHERE EXTENDED FUNCTION </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>for</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> collection of values to traverse<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;"> </span></span><span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>// Extended method Where using lamda expression for array </span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>// no need for delegate declaration </span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>[] a = { 1, 2, 3, 4, 5 };<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>IEnumerable&lt;</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>&gt; result= a.Where(x =&gt; x%2==0);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>foreach</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> (</span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> y </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>in</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result)<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">           
+</span>Console.WriteLine(y);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-13:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>LINQ, and Sum EXTENDED FUNCTION </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>for</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> sum of multiple values of array<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>//Extended function Sum</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>[] a = { 1, 2, 3, 4, 5 };<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result= a.Sum();<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Console.WriteLine(</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"sum of array elements ="</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>+result);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">       </span><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-14:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> sum of even numbers </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> where and sum extended functions <o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>// sum of even numbers using extended functions Where and Sum</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>[] a = { 1, 2, 3, 4, 5 };<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result= a.Sum(x=&gt;x%2==0);</span><span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>// double filter</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Console.WriteLine(</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"sum of array elements ="</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>+result);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">       </span><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-15:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> sum of salary of all employee </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Sum Extended function<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>List&lt;Employee&gt;
+list = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> List&lt;Employee&gt;();<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Employee e1 = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Employee() { id = 103, name = </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"ramesh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,salary=85000
+};<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Employee e2 = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Employee() { id = 101, name = </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"suresh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,
+salary = 90000 };<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Employee e3 = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Employee() { id = 102, name = </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"raju"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>, salary = 95000 };<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>list.Add(e1);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>list.Add(e2);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>list.Add(e3);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result = list.Sum(x =&gt; x.salary);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                     </span></span><span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>// extended method with lamda expression<span style="mso-spacerun: yes;">               </span></span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Console.WriteLine(</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"sum of salary of all employee ="</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>+result);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Employee</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> id { </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>get</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>set</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; }<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> name { </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>get</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>set</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; }<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> salary { </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>get</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>set</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; }<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-16:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>sum of salary of those employee whose name endswith </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"sh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">  </span>Where and Sum
+Extended function<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>List&lt;Employee&gt;
+list = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> List&lt;Employee&gt;();<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Employee e1 = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Employee() { id = 103, name = </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"ramesh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,salary=85000
+};<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Employee e2 = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Employee() { id = 101, name = </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"suresh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>,
+salary = 90000 };<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Employee e3 = </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>new</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Employee() { id = 102, name = </span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"raju"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>, salary = 95000 };<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>list.Add(e1);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>list.Add(e2);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>list.Add(e3);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result = list.Where(x=&gt;x.name.EndsWith(</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"sh"</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>)).Sum(x =&gt;
+x.salary);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">                    </span></span><span style='color: green; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>// chaining of extension method</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Console.WriteLine(</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"sum of salary of all employee ="</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>+result);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Employee</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> id { </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>get</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>set</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; }<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>string</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> name { </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>get</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>set</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; }<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> salary { </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>get</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>set</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>; }<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-17:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Min and Max extended function of LINQ<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>[] a = { 1, 2, 3, 4, 5 };<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> min = a.Min();<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> max = a.Max();<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Console.WriteLine(</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"min ="</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>
++ min);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Console.WriteLine(</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"max ="</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>
++ max);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program-18:</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> count extended function of LINQ<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Linq;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>using</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> System.Collections.Generic;<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>class</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: #2b91af; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Program</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>public</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>static</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> </span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>void</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> Main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>{<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>[] a = { 1, 2, 3, 4, 5 };<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span></span><span style='color: blue; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>int</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'> result = a.Count();<span style="mso-spacerun: yes;">        </span><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span>Console.WriteLine(</span><span style='color: #a31515; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>"count ="</span><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>
++ result);<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">        </span><o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-spacerun: yes;">    </span>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>}<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<span style='color: #0070c0; font-family: "bookman old style" , serif;'><b></b></span></div>
+</div>
+</div>
+</div>
+</body>
+</html>

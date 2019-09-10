@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import time
 
-baseUrl = 'https://manojpurohitcsharp2019.blogspot.com/'
+baseUrl = 'http://manojpurohitcsharp.blogspot.in/'
 driver = webdriver.Firefox()
 driver.get(baseUrl)
 time.sleep(10)
@@ -23,13 +23,11 @@ topHtml = '''
         <script> 
             $(function(){
                 $("#menuHere").load("menu.html"); 
-                $("#headerHere").load("header.html");
             });
         </script> 
     </head>
 
     <body>
-      <div id="headerHere"></div>
       <div id="menuHere"></div>
       <div class="content">
 '''
