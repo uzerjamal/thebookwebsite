@@ -1,0 +1,608 @@
+
+<html>
+    <head>
+        <title>
+LECTURE - 7
+</title>
+
+<link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery.js"></script> 
+        <script> 
+            $(function(){
+                $("#menuHere").load("menu.html"); 
+                $("#headerHere").load("header.html");
+            });
+        </script> 
+    </head>
+
+    <body>
+      <div id="headerHere"></div>
+      <div id="menuHere"></div>
+      <div class="content">
+<div class="article-content entry-content" itemprop="articleBody"><div dir="ltr" style="text-align: left;" trbidi="on">
+<br/>
+<div style="background: #00B050; margin-bottom: .0001pt; margin: 0in; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<br/></div>
+<div align="center" class="MsoNormal" style="text-align: center;">
+<b><span style='color: #ff0066; font-family: "bookman old style" , "serif"; font-size: 72.0pt;'>C#</span></b><span style="color: #ff0066; font-size: 13.5pt;"><o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal" style="background: #00B050; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal" style="tab-stops: 139.0pt;">
+<b style="mso-bidi-font-weight: normal;"><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 14.0pt;'>VISUAL STUDIO INTRODUCTION<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="tab-stops: 139.0pt;">
+<span style='color: black; font-family: "bookman old style" , "serif"; font-size: 8.0pt;'> <span style="mso-tab-count: 1;">                                             </span></span><span style="color: black; font-size: 13.5pt;"><o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is code editor <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is IDE<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is note ++ ( code editor / IDE)<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is Visual Studio <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What are different specifications and version of visual studio<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is solution explorer in Visuals Studio<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is property window in visual studio <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal" style="tab-stops: 139.0pt;">
+<b style="mso-bidi-font-weight: normal;"><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 14.0pt;'>C# INTRODUCTION<o:p></o:p></span></b></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is C#<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Who developed C#<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What are main features of C#<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is strongly typed language<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>What is type-safety <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Latest version of C#<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal" style="tab-stops: 139.0pt;">
+<b style="mso-bidi-font-weight: normal;"><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 14.0pt;'>FIRST C# PROGRAM WITH VISUAL STUDIO<o:p></o:p></span></b></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>First Program<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Program structure<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Fully qualified name<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>Namespace aliasing<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='color: black; font-family: "symbol"; font-size: 9.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='color: black; font-family: "bookman old style" , "serif"; font-size: 9.0pt;'>How to compile and execute first C# program in VS<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto;">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>WHO DEVELOPED C#:<span style="mso-spacerun: yes;">   </span><o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>Anders
+Hejlsberg and team, in Microsoft <o:p></o:p></span></div>
+<div class="MsoNormal" style="tab-stops: 139.0pt;">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "bookman old style" , "serif"; font-size: 14.0pt;'><o:p> </o:p></span></b><b><span style='font-family: "bookman old style" , "serif"; font-size: 14.0pt;'><o:p> </o:p></span></b></div>
+<div class="MsoNormal" style="tab-stops: 139.0pt;">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "bookman old style" , "serif"; font-size: 14.0pt;'>C#
+FEATURES<o:p></o:p></span></b></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>General
+purpose <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Object
+oriented<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Strongly
+typed<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Type-safe<span style="mso-spacerun: yes;">  </span><o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Case
+sensitive<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Free
+– form <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>.net
+compatible<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Component
+based<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Support
+multithreading<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Support
+garbage collection<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Event
+driven <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Support
+exception handling<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l0 level1 lfo1; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Support
+multipurpose application development <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red;">STRONGLY TYPED:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Any
+programming language where type is mandatory to define a variable, those
+languages are called strongly typed : <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>examples
+of storngly typed languages <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>1.
+Java<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>2.
+C#<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>examples
+of non-strongly typed languages: <span style="mso-spacerun: yes;"> </span>javascript<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red;"><span style="mso-spacerun: yes;"> </span>TYPE-SAFTEY: <span style="mso-spacerun: yes;"> </span><o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>Type
+safety means that the compiler will validate types while compiling, and show an
+error if we try to assign the wrong type to a variable.<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>String
+s="India"; //correct, No Error <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>String
+s=123;<span style="mso-spacerun: yes;">     </span>//wrong , ERROR<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>javascript
+is not type safe programming language: var a=5;var b="abc"<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>var
+s="India";// correct, NO ERROR<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>var
+s=123;<span style="mso-spacerun: yes;">    </span>// correct, NO ERROR<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "bookman old style" , "serif"; font-size: 14.0pt;'>C# VERSIONS
+AND FEATURES:<o:p></o:p></span></b></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red;">C# version 1.0: <o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Classes</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Structs</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Interfaces</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Events</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Properties</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Delegates</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Expressions</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Statements</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Attributes</div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red;">C# version 1.2 :</span>Visual Studio
+2003. </div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="mso-spacerun: yes;">                </span>-
+foreach loop </div>
+<div class="MsoNormal">
+<span style="mso-spacerun: yes;">                </span>-
+IEnumerator </div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red;">C# version 2.0:</span> released in
+2005, along with Visual Studio 2005:</div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Generics</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Partial types</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Anonymous methods</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Nullable types</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Iterators</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Covariance and contravariance</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Getter/setter separate accessibility</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Method group conversions (delegates)</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+static classes</div>
+<div class="MsoNormal">
+<span style="mso-spacerun: yes;">       </span><span style="mso-tab-count: 2;">                 </span>- Delegate inference</div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red;">C# version 3.0 : </span>came in late
+2007, along with Visual Studio 2008, </div>
+<div class="MsoNormal">
+<span style="mso-spacerun: yes;">                </span><span style="mso-spacerun: yes;">          </span>come with .NET Framework version 3.5.
+</div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="mso-spacerun: yes;">        </span><span style="mso-tab-count: 2;">                </span><span style="mso-spacerun: yes;">        </span>- Auto-implemented properties</div>
+<div class="MsoNormal" style="margin-left: .5in;">
+<span style="mso-spacerun: yes;">    
+</span><span style="mso-spacerun: yes;">               </span>- Anonymous types</div>
+<div class="MsoNormal">
+<span style="mso-spacerun: yes;">                </span><span style="mso-spacerun: yes;">                </span>- Query expressions</div>
+<div class="MsoNormal">
+<span style="mso-spacerun: yes;">                </span><span style="mso-spacerun: yes;">                </span>- Lambda expressions</div>
+<div class="MsoNormal">
+<span style="mso-spacerun: yes;">                </span><span style="mso-spacerun: yes;">                </span>- Expression trees</div>
+<div class="MsoNormal">
+<span style="mso-spacerun: yes;">                </span><span style="mso-spacerun: yes;">               </span>- Extension methods</div>
+<div class="MsoNormal">
+<span style="mso-spacerun: yes;">               </span><span style="mso-spacerun: yes;">                </span>- Implicitly typed local
+variables</div>
+<div class="MsoNormal">
+<span style="mso-spacerun: yes;">               </span><span style="mso-spacerun: yes;">               </span><span style="mso-spacerun: yes;"> </span>- Partial methods</div>
+<div class="MsoNormal">
+<span style="mso-spacerun: yes;">               </span><span style="mso-spacerun: yes;">                </span>- Object and collection
+initializers</div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red;">C# version 4.0:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Dynamic binding</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Named/optional arguments</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Generic covariant and contravariant</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Embedded interop types</div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red;">C# version 5.0:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Asynchronous members</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Caller info attributes</div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red;">C# version 6.0:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Static imports</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Exception filters</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Auto-property initializers</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Expression bodied members</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Null propagator</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+String interpolation</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+nameof operator</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Index initializers</div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red;">C# version 7.0:<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Out variables</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Tuples and deconstruction</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Pattern matching</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Local functions</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Expanded expression bodied members</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Ref locals and returns</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Other features included:</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Discards</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Binary Literals and Digit Separators</div>
+<div class="MsoNormal">
+<span style="mso-tab-count: 2;">                        </span>-
+Throw expressions</div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red;">C# version 7.1: </span>Visual Studio
+2017 version 15.3 and .NET Core 2.0 SDK.</div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red;">C# version 7.2: </span>Visual Studio
+2017 version 15.5, and .NET Core 2.0 SDK.</div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style="color: red;">C# version 7.3: </span>Visual Studio
+2017 version 15.7 and .NET Core 2.1 SDK.</div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<b style="mso-bidi-font-weight: normal;"><span style='font-family: "bookman old style" , "serif"; font-size: 14.0pt;'>IMPORTANT POINTS:
+C# <o:p></o:p></span></b></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoListParagraphCxSpFirst" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# is developed
+by<span style="mso-spacerun: yes;">  </span>Microsoft <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# is the part of
+.net framework<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# is .net
+framework compatible language.<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# is object
+oriented programming language<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# is strongly
+typed language<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# is event
+driven :<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# support
+multithreading : it is task driven<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# current
+version is .......................<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# is general
+purpose programming language<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# can be used to
+develop different types of software:CUI,GUI,WC,WPF,WCF.....<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# Program file
+must be save with .cs extension <o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# compiler is :
+csc<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# code cannot be
+written without class, interface etc.<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# includes good
+features of C++,Java and Visual Basic.<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# was included
+in Visual Studio 7.0 onwards<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpMiddle" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# does not
+support explicity pointer manipulations<o:p></o:p></span></div>
+<div class="MsoListParagraphCxSpLast" style="margin-left: .25in; mso-add-space: auto; mso-list: l2 level1 lfo3; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "symbol"; font-size: 11.0pt;'><span style="mso-list: Ignore;">·<span style='font: 7.0pt "Times New Roman";'>        
+</span></span></span><!--[endif]--><span style="font-size: 11.0pt;">C# does not
+support multiple inheritance with concrete classes<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<br/></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>REFERENCES:<o:p></o:p></span></div>
+<div style="margin-left: .25in; mso-list: l1 level1 lfo2; text-indent: -.25in;">
+<span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-list: Ignore;"><br/></span></span></div>
+<div style="margin-left: .25in; mso-list: l1 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-list: Ignore;">1.<span style='font: 7.0pt "Times New Roman";'>   
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><a href="https://www.javatpoint.com/csharp-features">https://www.javatpoint.com/csharp-features</a><o:p></o:p></span></div>
+<div style="margin-left: .25in; mso-list: l1 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-list: Ignore;">2.<span style='font: 7.0pt "Times New Roman";'>   
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><a href="https://www.tutorialsteacher.com/csharp/csharp-version-history">https://www.tutorialsteacher.com/csharp/csharp-version-history</a><o:p></o:p></span></div>
+<div style="margin-left: .25in; mso-list: l1 level1 lfo2; text-indent: -.25in;">
+<!--[if !supportLists]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><span style="mso-list: Ignore;">3.<span style='font: 7.0pt "Times New Roman";'>   
+</span></span></span><!--[endif]--><span style='font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history">https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history</a><o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'><br/></span></div>
+<div class="MsoNormal">
+<span style='color: red; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>ASSIGNMENT: </span></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , serif; font-size: 10pt;'><br/></span></div>
+<div class="MsoNormal">
+<span style='font-family: "bookman old style" , serif; font-size: 10pt;'>What
+is C# - Introduction of C#</span></div>
+<div style="margin-bottom: .0001pt; margin: 0in;">
+<br/></div>
+<div align="right" style="margin-bottom: .0001pt; margin: 0in; text-align: right;">
+<b><i><span style='color: #ff0066; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>ManojPurohit</span></i></b><b style="mso-bidi-font-weight: normal;"><span style='color: #ff0066; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'><o:p></o:p></span></b></div>
+<div align="right" style="margin-bottom: .0001pt; margin: 0in; text-align: right;">
+<b style="mso-bidi-font-weight: normal;"><i><span style='color: #00b050; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>shripurohitshri@gmail.com</span></i></b><b style="mso-bidi-font-weight: normal;"><span style='color: #00b050; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'><o:p></o:p></span></b></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<br/></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<br/></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<span style='color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>05.08.2019<o:p></o:p></span></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<i><span style='color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>shripurohitshri@gmail.com</span></i><span style='color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div align="center" style="margin-bottom: .0001pt; margin: 0in; text-align: center;">
+<i><span style='background: white; color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>notes@merehain:copyright reserved</span></i><span style='color: #002060; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'><o:p></o:p></span></div>
+<div style="margin-bottom: .0001pt; margin: 0in;">
+<br/></div>
+<div style="background: #00B050; margin-bottom: .0001pt; margin: 0in; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<span style='color: white; font-family: "bookman old style" , "serif"; font-size: 10.0pt;'>WEEK-2: LECTURE-7:C#.NET:MCA-III SEM:
+01.10PM - 02.10PM<o:p></o:p></span></div>
+<div class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none;">
+<br/></div>
+<div class="MsoNormal" style="background: #00B050; mso-pattern: solid #00B050; mso-shading: windowtext;">
+<span style='color: white; font-family: "bookman old style" , "serif"; font-size: 11.0pt;'>LECTURE-7: VISUAL
+STUDIO INTRODUCTION, C# INTRODUCTION</span><span style="color: white; font-size: 11.0pt;"><o:p></o:p></span></div>
+<br/></div>
+</div>
+</div>
+</body>
+</html>
