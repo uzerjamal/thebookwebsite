@@ -40,19 +40,26 @@ bottomHtml = '''
 </html>
 '''
 
+menuLinks = ''
+
+menuTop = '''
+<div class="menu">
+    <img src = "images/Csharp.png" height = "200" width = "200" style="padding-inline-start: 20px">
+    <ul>
+'''
+
+menuBottom = '''
+    </ul>
+</div>>
+'''
+
 print('SCROLLING TO THE BOTTOM OF THE PAGE!')
 last_height = driver.execute_script("return document.body.scrollHeight")
 
 while True:
-    # Scroll down to bottom
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight)")
-
     time.sleep(3)
-
-    # Calculate new scroll height and compare with last scroll height
     new_height = driver.execute_script("return document.body.scrollHeight")
-
-    # break condition
     if new_height == last_height:
         break
     last_height = new_height
@@ -70,5 +77,12 @@ for li in soup.ol:
         f.write(titleOpenHtml + title + titleCloseHtml + topHtml + str(contentDiv) + bottomHtml)
         f.close()
     print('Created ' + title + '.html')
+    menuLinks = '<li><a href="' + title + '.html' + '">' + title + '</a></li>' + menuLinks + '\n'
 
 print('SAVED POSTS!')
+print('CREATING MENU...')
+with open('menu.html', 'w+', encoding="utf-8") as f:
+    f.write(menuTop + menuLinks + menuBottom)
+    f.close()
+print('CREATED MENU!')
+print('DONE!')
