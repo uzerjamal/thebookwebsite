@@ -1,8 +1,16 @@
 
-<div class="menu">
-    <img src = "images/Csharp.png" height = "200" width = "200" style="padding-inline-start: 20px">
-    <ul>
+<div id="burgerMenu">
+   <button id = "burgerButton" onclick="open()">
+       ☰
+   </button> 
+</div>
 
+<div class="menu" id="menu">
+    <button id = "closeButton" onclick="close()">
+        Close &times;
+    </button>
+<img src = "images/Csharp.png" height = "200" width = "200" style="padding-inline-start: 20px">
+<ul>
 <li><a href="LECTURE-1---CS.html">Introduction</a></li>
 <hr>
 <li><a href="LECTURE-2---CS.html">History of .net</a></li>
@@ -100,4 +108,15 @@
 <li><a href="PRACTICAL-EXAM-(INTERNAL)-FOR-REMAINING-STUDENTS.html">PRACTICAL EXAM (INTERNAL) FOR REMAINING STUDENTS</a></li>
 <hr>
     </ul>
-</div>>
+</div>
+
+<script>
+    function open() {
+      document.getElementById("menu").style.width = "100%";
+      document.getElementById("menu").style.display = "block";
+    }
+    
+    function close() {
+      document.getElementById("menu").style.display = "none";
+    }
+</script>
