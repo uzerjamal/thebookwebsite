@@ -66,3 +66,29 @@ div.menu {
 .article-content{
     padding: 0px 70px;
 }
+
+#burgerButton{
+    display: none;
+}
+
+#closeButton{
+    display: none;
+}
+
+@media only screen and (max-width: 48em){
+    .menu{
+        display: none;
+    }
+
+    .content{
+        margin-left: 0em;
+    }
+
+    #burgerButton{
+        display: block;
+    }
+
+    #closeButton{
+        display: block;
+    }
+}
