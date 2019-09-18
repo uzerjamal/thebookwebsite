@@ -82,6 +82,7 @@ div.menu {
 
     .content{
         margin-left: 0em;
+        width: 100%;
     }
 
     #burgerButton{
